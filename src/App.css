@@ -13,7 +13,9 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+#thing {
+  display: none;
+}
 .container {
   max-width: 75vw;
 }
@@ -21,6 +23,13 @@ body {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+ 
+}
+.container .carousel .wrapper{
+  /* transform: translate3d(-25%, 0px, 0px); */
+  width: 400%;
+  display: flex;
+
 }
 
 .container .carousel::-webkit-scrollbar {
@@ -31,7 +40,7 @@ body {
   background-color: white;
   margin: 10px;
   padding: 10px;
-  width: 280px;
+  
   border-radius: 16px;
   flex: none;
 }
